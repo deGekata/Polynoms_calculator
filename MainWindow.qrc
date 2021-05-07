@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Images/Info.png</file>
+        <file>Styles/Table.qss</file>
+        <file>Images/Info2.png</file>
+    </qresource>
+</RCC>

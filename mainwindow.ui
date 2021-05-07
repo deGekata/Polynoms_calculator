@@ -1,0 +1,1098 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>808</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="mouseTracking">
+    <bool>false</bool>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #2D2F30;</string>
+   </property>
+   <widget class="QTableWidget" name="DataBase">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>67</y>
+      <width>780</width>
+      <height>185</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 10px;
+selection-background-color: #8C8DFA;
+color: Black;
+background-color: #fff;
+border-color: #000;
+border-style: solid;</string>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::NoEditTriggers</set>
+    </property>
+    <property name="dragEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="dragDropOverwriteMode">
+     <bool>false</bool>
+    </property>
+    <property name="dragDropMode">
+     <enum>QAbstractItemView::NoDragDrop</enum>
+    </property>
+    <property name="defaultDropAction">
+     <enum>Qt::MoveAction</enum>
+    </property>
+    <property name="alternatingRowColors">
+     <bool>true</bool>
+    </property>
+    <property name="selectionMode">
+     <enum>QAbstractItemView::ExtendedSelection</enum>
+    </property>
+    <property name="selectionBehavior">
+     <enum>QAbstractItemView::SelectItems</enum>
+    </property>
+    <property name="sortingEnabled">
+     <bool>true</bool>
+    </property>
+    <property name="rowCount">
+     <number>0</number>
+    </property>
+    <property name="columnCount">
+     <number>1</number>
+    </property>
+    <attribute name="horizontalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="horizontalHeaderCascadingSectionResizes">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="horizontalHeaderMinimumSectionSize">
+     <number>42</number>
+    </attribute>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>770</number>
+    </attribute>
+    <attribute name="horizontalHeaderHighlightSections">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="verticalHeaderMinimumSectionSize">
+     <number>37</number>
+    </attribute>
+    <attribute name="verticalHeaderDefaultSectionSize">
+     <number>37</number>
+    </attribute>
+    <column/>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>260</y>
+      <width>790</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="FuncLayout">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetNoConstraint</enum>
+     </property>
+     <item>
+      <widget class="QPushButton" name="mult">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-style:solid;
+	font-size:12pt;
+	background-color:#8C2F30;
+	color: #fff;
+	border-radius:7px;
+}
+QPushButton:hover{
+	color:#fff;
+	font-size:12pt;
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:0, x2:0.517, y2:1, stop:0 rgba(67, 21, 21, 255), stop:0.505682 rgba(87, 24, 24, 255), stop:1 rgba(67, 21, 21, 255));
+	border-color:#2d89ef;
+	border-width:2px;
+}
+
+QPushButton:pressed{
+	font-size:10pt;
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:0, x2:0.517, y2:1, stop:0 rgba(29, 29, 29, 255), stop:0.505682 rgba(45, 45, 45, 255), stop:1 rgba(29, 29, 29, 255));
+}</string>
+       </property>
+       <property name="text">
+        <string>*</string>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="division">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-style:solid;
+	font-size:12pt;
+	background-color:#8C2F30;
+	color: #fff;
+	border-radius:7px;
+}
+QPushButton:hover{
+	color:#fff;
+	font-size:12pt;
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:0, x2:0.517, y2:1, stop:0 rgba(67, 21, 21, 255), stop:0.505682 rgba(87, 24, 24, 255), stop:1 rgba(67, 21, 21, 255));
+	border-color:#2d89ef;
+	border-width:2px;
+}
+
+QPushButton:pressed{
+	font-size:10pt;
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:0, x2:0.517, y2:1, stop:0 rgba(29, 29, 29, 255), stop:0.505682 rgba(45, 45, 45, 255), stop:1 rgba(29, 29, 29, 255));
+}</string>
+       </property>
+       <property name="text">
+        <string>/</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="addition">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-style:solid;
+	font-size:12pt;
+	background-color:#8C2F30;
+	color: #fff;
+	border-radius:7px;
+}
+QPushButton:hover{
+	color:#fff;
+	font-size:12pt;
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:0, x2:0.517, y2:1, stop:0 rgba(67, 21, 21, 255), stop:0.505682 rgba(87, 24, 24, 255), stop:1 rgba(67, 21, 21, 255));
+	border-color:#2d89ef;
+	border-width:2px;
+}
+
+QPushButton:pressed{
+	font-size:10pt;
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:0, x2:0.517, y2:1, stop:0 rgba(29, 29, 29, 255), stop:0.505682 rgba(45, 45, 45, 255), stop:1 rgba(29, 29, 29, 255));
+}</string>
+       </property>
+       <property name="text">
+        <string>+</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="subtr">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-style:solid;
+	font-size:12pt;
+	background-color:#8C2F30;
+	color: #fff;
+	border-radius:7px;
+}
+QPushButton:hover{
+	color:#fff;
+	font-size:12pt;
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:0, x2:0.517, y2:1, stop:0 rgba(67, 21, 21, 255), stop:0.505682 rgba(87, 24, 24, 255), stop:1 rgba(67, 21, 21, 255));
+	border-color:#2d89ef;
+	border-width:2px;
+}
+
+QPushButton:pressed{
+	font-size:10pt;
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:0, x2:0.517, y2:1, stop:0 rgba(29, 29, 29, 255), stop:0.505682 rgba(45, 45, 45, 255), stop:1 rgba(29, 29, 29, 255));
+}</string>
+       </property>
+       <property name="text">
+        <string>-</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="deriv">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font-size: 10pt;
+border-style:solid;
+
+background-color:#3d3d3d;
+color:#fff;
+border-radius:7px;
+}
+QPushButton:hover{
+color:#ccc;
+font-size: 10pt;
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:0, x2:0.517, y2:1, stop:0 rgba(45, 45, 45, 255), stop:0.505682 rgba(45, 45, 45, 255), stop:1 rgba(29, 29, 29, 255));
+	border-color:#2d89ef;
+border-width:2px;
+}
+
+QPushButton:pressed{
+font-size: 8pt;
+background-color: qlineargradient(spread:pad, x1:0.517, y1:0, x2:0.517, y2:1, stop:0 rgba(29, 29, 29, 255), stop:0.505682 rgba(45, 45, 45, 255), stop:1 rgba(29, 29, 29, 255));
+}</string>
+       </property>
+       <property name="text">
+        <string>f`(x)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="value_in">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font-size: 10pt;
+border-style:solid;
+
+background-color:#3d3d3d;
+color:#fff;
+border-radius:7px;
+}
+QPushButton:hover{
+color:#ccc;
+font-size: 10pt;
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:0, x2:0.517, y2:1, stop:0 rgba(45, 45, 45, 255), stop:0.505682 rgba(45, 45, 45, 255), stop:1 rgba(29, 29, 29, 255));
+	border-color:#2d89ef;
+border-width:2px;
+}
+
+QPushButton:pressed{
+font-size: 8pt;
+background-color: qlineargradient(spread:pad, x1:0.517, y1:0, x2:0.517, y2:1, stop:0 rgba(29, 29, 29, 255), stop:0.505682 rgba(45, 45, 45, 255), stop:1 rgba(29, 29, 29, 255));
+}</string>
+       </property>
+       <property name="text">
+        <string>Value in point</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="roots">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-style:solid;
+	font-size: 10pt;
+	background-color: #5557CF;
+	color:#fff;
+	border-radius:7px;
+}
+
+QPushButton:hover{
+	color:#fff;
+	font-size: 10pt;
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:0, x2:0.517, y2:1, stop:0 rgba(50, 51, 122, 255), stop:0.505682 rgba(20, 20, 50, 255), stop:1 rgba(50, 51, 122, 255));
+	border-color:#2d89ef;
+	border-width:2px;
+}
+
+QPushButton:pressed{
+	font-size: 8pt;
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:0, x2:0.517, y2:1, stop:0 rgba(29, 29, 29, 255), stop:0.505682 rgba(45, 45, 45, 255), stop:1 rgba(29, 29, 29, 255));
+}</string>
+       </property>
+       <property name="text">
+        <string>Rootes</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Int_roots">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-style:solid;
+	font-size: 10pt;
+	background-color: #5557CF;
+	color:#fff;
+	border-radius:7px;
+}
+
+QPushButton:hover{
+	color:#fff;
+	font-size: 10pt;
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:0, x2:0.517, y2:1, stop:0 rgba(50, 51, 122, 255), stop:0.505682 rgba(20, 20, 50, 255), stop:1 rgba(50, 51, 122, 255));
+	border-color:#2d89ef;
+	border-width:2px;
+}
+
+QPushButton:pressed{
+	font-size: 8pt;
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:0, x2:0.517, y2:1, stop:0 rgba(29, 29, 29, 255), stop:0.505682 rgba(45, 45, 45, 255), stop:1 rgba(29, 29, 29, 255));
+}</string>
+       </property>
+       <property name="text">
+        <string>Integer rootes</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>10</y>
+      <width>361</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>22</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #fff;
+border-width: 2px;
+border-style: outset;
+border-radius: 10px;
+border-color: #fff;
+color: #000;
+</string>
+    </property>
+    <property name="text">
+     <string>Your polynom`s:</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="Messagebox">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>10</y>
+      <width>361</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #fff;
+border-width: 2px;
+border-style: outset;
+border-radius: 10px;
+border-color: #fff;
+color: #000;
+</string>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>470</y>
+      <width>461</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>6</number>
+     </property>
+     <item>
+      <layout class="QVBoxLayout" name="DelLayout">
+       <property name="spacing">
+        <number>1</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="DB_clear">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	font-size: 11pt;
+	border-style: solid;
+	background-color: #905adb;
+	color:#fff;
+	border-radius:7px;
+}
+
+QPushButton:hover{
+	color:#fff;
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:0, x2:0.517, y2:1, 
+	stop:0 rgba(70, 30, 110, 255), 
+	stop:0.505682 rgba(100, 50, 150, 255), 
+	stop:1 rgba(70, 30, 110, 255));
+	border-color:#2d89ef;
+	border-width:2px;
+}
+
+QPushButton:pressed{
+	font-size: 9pt;
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:0, x2:0.517, y2:1, stop:0 rgba(29, 29, 29, 255), stop:0.505682 rgba(45, 45, 45, 255), stop:1 rgba(29, 29, 29, 255));
+}</string>
+         </property>
+         <property name="text">
+          <string>Clear database</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="Del_range">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>13</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	font-size: 13pt;
+	border-style: solid;
+	background-color: #905adb;
+	color:#fff;
+	border-radius:7px;
+}
+
+QPushButton:hover{
+	color:#fff;
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:0, x2:0.517, y2:1, 
+	stop:0 rgba(70, 30, 110, 255), 
+	stop:0.505682 rgba(100, 50, 150, 255), 
+	stop:1 rgba(70, 30, 110, 255));
+	border-color:#2d89ef;
+	border-width:2px;
+}
+
+QPushButton:pressed{
+	font-size: 11pt;
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:0, x2:0.517, y2:1, stop:0 rgba(29, 29, 29, 255), stop:0.505682 rgba(45, 45, 45, 255), stop:1 rgba(29, 29, 29, 255));
+}</string>
+         </property>
+         <property name="text">
+          <string>Delete range</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QPushButton" name="DelSelect">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	font-size: 11pt;
+	border-style: solid;
+	background-color: #905adb;
+	color:#fff;
+	border-radius:7px;
+}
+
+QPushButton:hover{
+	color:#fff;
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:0, x2:0.517, y2:1, 
+	stop:0 rgba(70, 30, 110, 255), 
+	stop:0.505682 rgba(100, 50, 150, 255), 
+	stop:1 rgba(70, 30, 110, 255));
+	border-color:#2d89ef;
+	border-width:2px;
+}
+
+QPushButton:pressed{
+	font-size: 9pt;
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:0, x2:0.517, y2:1, stop:0 rgba(29, 29, 29, 255), stop:0.505682 rgba(45, 45, 45, 255), stop:1 rgba(29, 29, 29, 255));
+}</string>
+       </property>
+       <property name="text">
+        <string>Delete selected</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="ClearPoles">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	font-size: 11pt;
+	border-style: solid;
+	background-color: #905adb;
+	color:#fff;
+	border-radius:7px;
+}
+
+QPushButton:hover{
+	color:#fff;
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:0, x2:0.517, y2:1, 
+	stop:0 rgba(70, 30, 110, 255), 
+	stop:0.505682 rgba(100, 50, 150, 255), 
+	stop:1 rgba(70, 30, 110, 255));
+	border-color:#2d89ef;
+	border-width:2px;
+}
+
+QPushButton:pressed{
+	font-size: 9pt;
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:0, x2:0.517, y2:1, stop:0 rgba(29, 29, 29, 255), stop:0.505682 rgba(45, 45, 45, 255), stop:1 rgba(29, 29, 29, 255));
+}</string>
+       </property>
+       <property name="text">
+        <string>Clear pole`s</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="FileImport">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	font-size: 11pt;
+	border-style: solid;
+	background-color: #905adb;
+	color:#fff;
+	border-radius:7px;
+}
+
+QPushButton:hover{
+	color:#fff;
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:0, x2:0.517, y2:1, 
+	stop:0 rgba(70, 30, 110, 255), 
+	stop:0.505682 rgba(100, 50, 150, 255), 
+	stop:1 rgba(70, 30, 110, 255));
+	border-color:#2d89ef;
+	border-width:2px;
+}
+
+QPushButton:pressed{
+	font-size: 9pt;
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:0, x2:0.517, y2:1, stop:0 rgba(29, 29, 29, 255), stop:0.505682 rgba(45, 45, 45, 255), stop:1 rgba(29, 29, 29, 255));
+}</string>
+       </property>
+       <property name="text">
+        <string>Import file</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>360</y>
+      <width>111</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>19</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	border-top-style: none;
+ 	 border-right-style: none;
+ 	 border-bottom-style: none;
+ 	 border-left-style: solid;
+	border-radius: 5px;
+	color: #000000;
+	background-color: #fff;
+}</string>
+    </property>
+    <property name="text">
+     <string>Pole 1 :</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>410</y>
+      <width>111</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>19</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	border-top-style: none;
+ 	 border-right-style: none;
+ 	 border-bottom-style: none;
+ 	 border-left-style: solid;
+	border-radius: 5px;
+	color: #000000;
+	background-color: #fff;
+}</string>
+    </property>
+    <property name="text">
+     <string>Pole 2 :</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Form2">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>410</y>
+      <width>700</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+	font-size: 10pt;
+	border-radius: 5px; 
+	color:rgb(0, 0, 0); 
+	background-color: rgb(255, 255, 255); 
+  } 
+
+
+
+QLineEdit:focus { 
+	font-size: 10pt;
+	border:2px outset; 
+	border-color: #2d89ef; 
+	color: #000; 
+	background-color: rgb(255, 255, 255); 
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Form1">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>360</y>
+      <width>700</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+	font-size: 10pt;
+	border-radius: 5px; 
+	color:rgb(0, 0, 0); 
+	background-color: rgb(255, 255, 255); 
+  } 
+
+
+
+QLineEdit:focus { 
+	font-size: 10pt;
+	border:2px outset; 
+	border-color: #2d89ef; 
+	color: #000; 
+	background-color: rgb(255, 255, 255); 
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>14</x>
+      <y>470</y>
+      <width>196</width>
+      <height>98</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>19</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	border-top-style: none;
+ 	 border-right-style: none;
+ 	 border-bottom-style: none;
+ 	 border-left-style: solid;
+	border-radius: 5px;
+	color: #fff;
+	background-color: #905adb;
+}</string>
+    </property>
+    <property name="text">
+     <string>Add</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="InfoButton">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>470</y>
+      <width>99</width>
+      <height>99</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	font-size: 11pt;
+	border-style: solid;
+	background-color: #905adb;
+	color:#fff;
+	border-radius: 49px;
+}
+
+QPushButton:hover{
+	color:#fff;
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:0, x2:0.517, y2:1, 
+	stop:0 rgba(70, 30, 110, 255), 
+	stop:0.505682 rgba(100, 50, 150, 255), 
+	stop:1 rgba(70, 30, 110, 255));
+	border-color:#2d89ef;
+	border-width:2px;
+}
+
+QPushButton:pressed{
+	font-size: 9pt;
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:0, x2:0.517, y2:1, stop:0 rgba(29, 29, 29, 255), stop:0.505682 rgba(45, 45, 45, 255), stop:1 rgba(29, 29, 29, 255));
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>58</x>
+      <y>470</y>
+      <width>3</width>
+      <height>97</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="AddPole1">
+    <property name="geometry">
+     <rect>
+      <x>61</x>
+      <y>470</y>
+      <width>150</width>
+      <height>49</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	font-size: 18pt;
+	border-style: solid;
+	background-color: #905adb;
+	color:#fff;
+	border-radius:7px;
+}
+
+QPushButton:hover{
+	color:#fff;
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:0, x2:0.517, y2:1, 
+	stop:0 rgba(70, 30, 110, 255), 
+	stop:0.505682 rgba(100, 50, 150, 255), 
+	stop:1 rgba(70, 30, 110, 255));
+	border-color:#2d89ef;
+	border-width:2px;
+}
+
+QPushButton:pressed{
+	font-size: 16pt;
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:0, x2:0.517, y2:1, stop:0 rgba(29, 29, 29, 255), stop:0.505682 rgba(45, 45, 45, 255), stop:1 rgba(29, 29, 29, 255));
+}</string>
+    </property>
+    <property name="text">
+     <string>Pole 1</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="AddPole2">
+    <property name="geometry">
+     <rect>
+      <x>61</x>
+      <y>519</y>
+      <width>150</width>
+      <height>49</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	font-size: 18pt;
+	border-style: solid;
+	background-color: #905adb;
+	color:#fff;
+	border-radius:7px;
+}
+
+QPushButton:hover{
+	color:#fff;
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:0, x2:0.517, y2:1, 
+	stop:0 rgba(70, 30, 110, 255), 
+	stop:0.505682 rgba(100, 50, 150, 255), 
+	stop:1 rgba(70, 30, 110, 255));
+	border-color:#2d89ef;
+	border-width:2px;
+}
+
+QPushButton:pressed{
+	font-size: 16pt;
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:0, x2:0.517, y2:1, stop:0 rgba(29, 29, 29, 255), stop:0.505682 rgba(45, 45, 45, 255), stop:1 rgba(29, 29, 29, 255));
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Pole 2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>470</y>
+      <width>201</width>
+      <height>98</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>19</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	border-top-style: none;
+ 	 border-right-style: none;
+ 	 border-bottom-style: none;
+ 	 border-left-style: solid;
+	border-radius: 5px;
+	color: #fff;
+	background-color: #905adb;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>67</y>
+      <width>780</width>
+      <height>3</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #123;</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <zorder>label</zorder>
+   <zorder>label_5</zorder>
+   <zorder>label_4</zorder>
+   <zorder>DataBase</zorder>
+   <zorder>horizontalLayoutWidget</zorder>
+   <zorder>Messagebox</zorder>
+   <zorder>horizontalLayoutWidget_2</zorder>
+   <zorder>label_2</zorder>
+   <zorder>label_3</zorder>
+   <zorder>Form2</zorder>
+   <zorder>Form1</zorder>
+   <zorder>InfoButton</zorder>
+   <zorder>line</zorder>
+   <zorder>AddPole1</zorder>
+   <zorder>AddPole2</zorder>
+   <zorder>line_2</zorder>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="styleSheet">
+    <string notr="true">background-color: #011111</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
