@@ -1,4 +1,4 @@
-# Plasma-fractal-generator
+# Polynoms calculatro with UI
 
 ### Example image
 
